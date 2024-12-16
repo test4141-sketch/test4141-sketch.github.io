@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Research Page</title>
+    <title>Ibrahim AlShourbaji Page</title>
 
     <!-- Link to CSS for styling -->
     <link rel="stylesheet" href="styles.css">
@@ -64,16 +64,12 @@
             height: 150px;
             object-fit: cover;
             margin: 20px auto;
-            animation: zoomIn 3s infinite alternate;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        @keyframes zoomIn {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(1.1);
-            }
+        .profile-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
 
         .buttons {
@@ -119,7 +115,7 @@
     </header>
 
     <main>
-        <img src="ibrahim-alshourbaji.jpg" alt="Photo" class="profile-image">
+        <img src="ibrahim-alshourbaji.jpg" alt="Your Photo" class="profile-image">
         <p>Welcome to my research page. Here, you'll find links to my academic profiles and some of my recent work. Feel free to connect!</p>
 
         <div class="buttons">
@@ -131,7 +127,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Ibrahim Al-Shourbaji | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        <p>&copy; 2024 Ibrahim AlShourbaji | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     </footer>
 </body>
 </html>
