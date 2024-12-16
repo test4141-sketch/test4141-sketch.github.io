@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>Your Research Page</title>
+
+    <!-- Link to CSS for styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -23,10 +28,97 @@
       ]
     }
     </script>
+
+    <!-- Basic CSS styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: white;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
 </head>
-    <link rel="stylesheet" href="styles.css">
 <body>
-    <h1>Welcome to My Research Page</h1>
-    <p>This is a simple GitHub Pages site to showcase my academic profile.</p>
+    <header>
+        <h1>Your Name</h1>
+        <p>Researcher | Affiliation | Academic Enthusiast</p>
+    </header>
+
+    <main>
+        <img src="your-photo.jpg" alt="Your Photo" class="profile-image">
+        <p>Welcome to my research page. Here, you'll find links to my academic profiles and some of my recent work. Feel free to connect!</p>
+
+        <div class="buttons">
+            <a href="https://scholar.google.com/citations?user=YOUR_ID" class="button" target="_blank">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Your-Name" class="button" target="_blank">ResearchGate</a>
+            <a href="https://orcid.org/0000-0000-0000-0000" class="button" target="_blank">ORCID</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    </footer>
 </body>
 </html>
