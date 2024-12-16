@@ -13,18 +13,19 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Your Full Name",
-      "url": "https://username.github.io",
+      "name": "Ibrahim AlShourbaji",
+      "url": "https://test4141-sketch.github.io/",
       "image": "https://username.github.io/your-photo.jpg",
-      "jobTitle": "Researcher",
+      "jobTitle": "PhD in Computer Science",
       "affiliation": {
-        "@type": "Organization",
-        "name": "Your Institution"
+        "@type": "Jazan University",
+        "name": "Department of Electronic and Electrical Engineering"
       },
       "sameAs": [
-        "https://scholar.google.com/citations?user=YOUR_ID",
-        "https://www.researchgate.net/profile/Your-Name",
-        "https://orcid.org/0000-0000-0000-0000"
+        "https://scholar.google.com/citations?user=T4jhEMQAAAAJ&hl=en",
+        "https://www.researchgate.net/profile/Ibrahim-Alshourbaji-2",
+        "https://orcid.org/0000-0002-6485-8415",
+        "https://github.com/IBRAlShourbaji"
       ]
     }
     </script>
@@ -63,6 +64,16 @@
             height: 150px;
             object-fit: cover;
             margin: 20px auto;
+            animation: zoomIn 3s infinite alternate;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
         }
 
         .buttons {
@@ -79,11 +90,12 @@
             border: none;
             border-radius: 5px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .button:hover {
             background-color: #2980b9;
+            transform: scale(1.1);
         }
 
         footer {
@@ -102,8 +114,8 @@
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Researcher | Affiliation | Academic Enthusiast</p>
+        <h1>Ibrahim Al-Shourbaji</h1>
+        <p>PhD in Computer Science | Jazan University | Department of Electronic and Electrical Engineering</p>
     </header>
 
     <main>
@@ -111,14 +123,15 @@
         <p>Welcome to my research page. Here, you'll find links to my academic profiles and some of my recent work. Feel free to connect!</p>
 
         <div class="buttons">
-            <a href="https://scholar.google.com/citations?user=YOUR_ID" class="button" target="_blank">Google Scholar</a>
-            <a href="https://www.researchgate.net/profile/Your-Name" class="button" target="_blank">ResearchGate</a>
-            <a href="https://orcid.org/0000-0000-0000-0000" class="button" target="_blank">ORCID</a>
+            <a href="https://scholar.google.com/citations?user=T4jhEMQAAAAJ&hl=en" class="button" target="_blank">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Ibrahim-Alshourbaji-2" class="button" target="_blank">ResearchGate</a>
+            <a href="https://orcid.org/0000-0002-6485-8415" class="button" target="_blank">ORCID</a>
+            <a href="https://github.com/IBRAlShourbaji" class="button" target="_blank">GitHub</a>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        <p>&copy; 2024 Ibrahim Al-Shourbaji | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     </footer>
 </body>
 </html>
