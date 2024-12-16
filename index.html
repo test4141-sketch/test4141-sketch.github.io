@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibrahim AlShourbaji Page</title>
 
-    <!-- Link to CSS for styling -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -33,16 +36,16 @@
     <!-- Basic CSS styling -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: #f4f4f9;
             line-height: 1.6;
         }
 
         header {
-            background-color: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.9);
             color: white;
             padding: 20px 10px;
             text-align: center;
@@ -51,6 +54,11 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            transition: color 0.3s;
+        }
+
+        header h1:hover {
+            color: #1abc9c;
         }
 
         main {
@@ -73,13 +81,17 @@
         }
 
         .buttons {
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .button {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px 20px;
-            margin: 10px;
             font-size: 1em;
             color: white;
             background-color: #3498db;
@@ -87,6 +99,11 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s, transform 0.3s;
+            gap: 10px;
+        }
+
+        .button i {
+            font-size: 1.2em;
         }
 
         .button:hover {
@@ -94,8 +111,25 @@
             transform: scale(1.1);
         }
 
+        .card {
+            background-color: white;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
         footer {
-            background-color: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.9);
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -103,31 +137,47 @@
         }
 
         footer a {
-            color: #3498db;
+            color: #1abc9c;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #f4f4f9;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ibrahim Al-Shourbaji</h1>
+        <h1>Ibrahim AlShourbaji</h1>
         <p>PhD in Computer Science | Jazan University | Department of Electronic and Electrical Engineering</p>
     </header>
 
     <main>
-        <img src="ibrahim-alshourbaji.jpg" alt="Your Photo" class="profile-image">
+        <img src="ibrahim-alshourbaji.jpg" alt="Photo" class="profile-image">
         <p>Welcome to my research page. Here, you'll find links to my academic profiles and some of my recent work. Feel free to connect!</p>
 
-        <div class="buttons">
-            <a href="https://scholar.google.com/citations?user=T4jhEMQAAAAJ&hl=en" class="button" target="_blank">Google Scholar</a>
-            <a href="https://www.researchgate.net/profile/Ibrahim-Alshourbaji-2" class="button" target="_blank">ResearchGate</a>
-            <a href="https://orcid.org/0000-0002-6485-8415" class="button" target="_blank">ORCID</a>
-            <a href="https://github.com/IBRAlShourbaji" class="button" target="_blank">GitHub</a>
+        <div class="card">
+            <h2>Connect with Me</h2>
+            <div class="buttons">
+                <a href="https://scholar.google.com/citations?user=T4jhEMQAAAAJ&hl=en" class="button" target="_blank">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+                <a href="https://www.researchgate.net/profile/Ibrahim-Alshourbaji-2" class="button" target="_blank">
+                    <i class="fas fa-book"></i> ResearchGate
+                </a>
+                <a href="https://orcid.org/0000-0002-6485-8415" class="button" target="_blank">
+                    <i class="fas fa-id-badge"></i> ORCID
+                </a>
+                <a href="https://github.com/IBRAlShourbaji" class="button" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ibrahim AlShourbaji | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        <p>&copy; 2024 Ibrahim Al-Shourbaji | Built with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     </footer>
 </body>
 </html>
