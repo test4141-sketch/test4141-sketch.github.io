@@ -18,7 +18,7 @@
       "@type": "Person",
       "name": "Ibrahim AlShourbaji",
       "url": "https://test4141-sketch.github.io/",
-      "image": "https://raw.githubusercontent.com/test4141-sketch/test4141-sketch.github.io/refs/heads/main/ibrahim.jpg",
+      "image": "https://raw.githubusercontent.com/test4141-sketch/test4141-sketch.github.io/refs/heads/main/ibrahim1.jpg",
       "jobTitle": "PhD in Computer Science",
       "affiliation": {
         "@type": "Organization",
@@ -28,7 +28,8 @@
         "https://scholar.google.com/citations?user=T4jhEMQAAAAJ&hl=en",
         "https://www.researchgate.net/profile/Ibrahim-Alshourbaji-2",
         "https://orcid.org/0000-0002-6485-8415",
-        "https://github.com/IBRAlShourbaji"
+        "https://github.com/IBRAlShourbaji",
+        "https://www.linkedin.com/in/your-profile-url/"
       ]
     }
     </script>
@@ -104,15 +105,53 @@
             transform: translateY(-3px);
         }
 
+        /* About and Publications Section */
+        .section {
+            text-align: left;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .section p, .section ul {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            margin-bottom: 15px;
+        }
+
+        .section a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <img src="ibrahim.jpg" alt="Profile Picture" class="profile-image">
+        <img src="ibrahim1.jpg" alt="Profile Picture" class="profile-image">
         <h1>Ibrahim AlShourbaji</h1>
         <p>PhD in Computer Science | Jazan University</p>
     </header>
 
+    <!-- Buttons Section -->
     <div class="buttons">
         <a href="mailto:ibrahim@example.com" class="button">
             <i class="fas fa-envelope"></i> Email
@@ -129,6 +168,37 @@
         <a href="https://github.com/IBRAlShourbaji" class="button" target="_blank">
             <i class="fab fa-github"></i> GitHub
         </a>
+        <a href="https://www.linkedin.com/in/ibrahim-alshourbaji-6a0666199/?originalSubdomain=sa" class="button" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+
+    <!-- About Section -->
+    <div class="section">
+        <h2>About</h2>
+        <p>Ibrahim AlShourbaji received the Ph.D. degree from the University of Hertfordshire, U.K. He holds an associate position with the Department of Electrical and Electronics Engineering, Jazan University, Saudi Arabia. He has published several journal papers, conferences, and books. His main research interests include computational intelligence, metaheuristic algorithms, signal processing, deep learning, robotics, and optimization. He serves as a reviewer for many prestigious journals in Elsevier, Springer, and IEEE.</p>
+    </div>
+
+    <!-- Publications Section -->
+    <div class="section">
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                Kachare, P., Puri, D., ... & AlShourbaji, I. (2024). <a href="https://doi.org/10.1007/s13246-024-01425-w" target="_blank">LCADNet: a novel light CNN architecture for EEG-based Alzheimer disease detection.</a>
+            </li>
+            <li>
+                Puri, D. V., Kachare, P. H., ... & Al-Shourbaji, I. (2024). <a href="https://doi.org/10.1109/ACCESS.2024.3435768" target="_blank">LEADNet: Detection of Alzheimer’s Disease using EEG Analysis.</a>
+            </li>
+            <li>
+                AlShourbaji, I., Helian, N., ... (2023). <a href="https://doi.org/10.1038/s41598-023-41093-6" target="_blank">An efficient churn prediction model using gradient boosting.</a>
+            </li>
+            <li>
+                Al-Shourbaji, I., Duraibi, S. (2023). <a href="https://doi.org/10.3390/w15091657" target="_blank">IWQP4Net: Irrigation Water Quality Prediction.</a>
+            </li>
+            <li>
+                Al-Shourbaji, I., ... (2022). <a href="https://doi.org/10.3390/math10132351" target="_blank">Efficient parallel reptile search algorithm.</a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
